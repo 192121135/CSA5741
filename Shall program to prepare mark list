@@ -1,0 +1,32 @@
+echo "Enter mark 1:"
+read m1
+echo "Enter mark 2:"
+read m2
+echo "Enter mark 3:"
+read m3
+total=`expr $m1+ $m2 +$m3`
+echo"total marks:"$total
+perdentage=`expr $total/3`
+echo "percentage:" $percentage %
+if[$percentage -ge 90]
+then
+echo"s grade"
+elif [$percentage -ge 80]
+then 
+echo "A grade"
+elif [$percentage -ge 70]
+then 
+echo "B grade "
+elif[ $percentage -ge 50]
+then 
+echo "c grade"
+else
+echo "failed"
+fi
+OUTPUT:
+Enter mark 1:57
+Enter mark 2:78
+Enter mark 3:80
+total marks =215
+percentage = 71.6
+B grade
