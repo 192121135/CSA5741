@@ -1,33 +1,23 @@
-echo "Enter Two numbers : "
-read a
-read b
-echo "Enter Choice :"
-echo "1. Addition"
-echo "2. Subtraction"
-echo "3. Multiplication"
-echo "4. Division"
-read ch
-case $ch in
-  1)res=`echo $a + $b | bc`
-  ;;
-  2)res=`echo $a - $b | bc`
-  ;;
-  3)res=`echo $a \* $b | bc`
-  ;;
-  4)res=`echo "scale=2; $a / $b" | bc`
-  ;;
-esac
-echo "Result : $res"
-Output:
-Enter two numbers :6 4
-Enter choice :
-1. Addition
-2. Subtraction
-3. Multiplication
-4. Division
-1
-res=10
+echo n1:
+read n1
+echo n2
+read n2:
+sum=$(( n1+n2 ))
+echo "sum = $sum"
+sub=$(( n1-n2 ))
+echo "sub = $sub"
+mul=$(( n1*n2 ))
+echo "mul = $mul"
+div=$(( n1/n2 ))
+echo "div = $div"
 
+OUTPUT:
+n1:4
+n2:3
+sum=7
+sub=1
+mul=12
+div=0
 
 
  
