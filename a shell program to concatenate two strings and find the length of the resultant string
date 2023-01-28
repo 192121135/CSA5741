@@ -3,7 +3,7 @@ read a
 echo "enter another string "
 read b
 a+=$b
-echo "concentrated string is "$a
+echo "concatenate string is "$a
 n=${#a}
 echo"$n"
 
