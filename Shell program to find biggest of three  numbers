@@ -4,17 +4,16 @@ echo "Enter the second number"
 read b
 echo "Enter the third number"
 read c
-if[ $a  -gt $b] && [ $a -gt $c]
+if [ $a -gt $b] && [$num1 -gt $c]
 then
-   echo "The  greatest of given three numbers is" $a
-   elif[ $b -gt $a] && [$a -gt $c]
+echo $a
+elif [$b -gt $a] && [$b - gt $c]
 then
-    echo "The greatest of given three numbbers is" $b
+echo $b
 else
-    echo"The greatest of given three numbers is" $c
+echo $c
 fi
-
-OUTPUT"
+OUTPUT
 Enter the first number:4
 Enter the second number:12
 Enter the third number:2
